@@ -18,3 +18,6 @@ jobs:
 
       - name: Build the app
         run: xcodebuild clean build -project CreateCICD.xcodeproj -scheme CreateCICD -destination 'platform=iOS Simulator,name=iPhone 15 Pro,OS=17.5'
+
+      - name: Test the app
+        run: xcodebuild clean test -project CreateCICD.xcodeproj -scheme CreateCICD -destination 'platform=iOS Simulator,name=iPhone 15 Pro,OS=17.5' ONLY_ACTIVE_ARCH=YES
