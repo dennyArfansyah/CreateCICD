@@ -32,5 +32,10 @@ final class CreateCICDTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func test_Aritmathic() {
+        let sum = 1+1
+        XCTAssertEqual(sum, 2)
+    }
 
 }
