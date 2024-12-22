@@ -37,5 +37,9 @@ final class CreateCICDTests: XCTestCase {
         let sum = 1+1
         XCTAssertEqual(sum, 2)
     }
-
+    
+    func test_stringEqualizer() {
+        let item1 = "Hello World"
+        XCTAssertNotEqual(item1, "Its me Denny")
+    }
 }
