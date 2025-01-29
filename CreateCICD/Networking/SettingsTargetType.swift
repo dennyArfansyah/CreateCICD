@@ -11,8 +11,8 @@ import Moya
 enum SettingsTargetType: TargetType {
     case getSettings
     
-    var baseURL: URL { URL(string: "https://octomobile-uat.cimbniaga.co.id/staging/api/")! }
-    var path: String { "parameter/biller/menus" }
+    var baseURL: URL { URL(string: "https://run.mocky.io/v3/")! }
+    var path: String { "a5cf23b2-37d8-4ab0-9bd5-693abfad886c" }
     var method: Moya.Method { .get }
     var task: Moya.Task { .requestPlain }
     var headers: [String : String]? {

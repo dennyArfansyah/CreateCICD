@@ -16,8 +16,8 @@ class SettingsServiceAPIIntegrationTests: XCTestCase {
         
         do {
             let menu = try await sut.getMenus()
-            XCTAssertEqual(menu.sourceSystem, "OCTOMOBILE_ID")
-            XCTAssertEqual(menu.responseKey, "SUCCESS")
+            XCTAssertEqual(menu.traceId, "f332078c5e372ea592a128a62b933e89")
+            XCTAssertEqual(menu.data.count, 2)
         } catch {
             XCTFail("expacting to get real response got \(error) instead")
         }

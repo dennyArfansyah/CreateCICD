@@ -32,6 +32,4 @@ struct MenuResponse: Decodable {
     let serviceRoute: String
     let menuBillerCode: String
     let icon1: String
-    let icon2: String
-    let icon3: String
 }
